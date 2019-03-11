@@ -1,0 +1,6 @@
+.sentence {
+  display: flex;
+  flex-direction: row;
+  min-height: 150px;
+  justify-content: flex-start;
+}

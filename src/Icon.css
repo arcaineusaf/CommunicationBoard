@@ -1,0 +1,19 @@
+.Icon-wrapper {
+  max-width: 100px;
+  padding: 1rem;
+}
+
+.Icon {
+  border: 1px solid blue;
+  display: inline-flex;
+  height: 100px;
+  width: 100px;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+  text-align: center;
+}
+
+.Icon-footer {
+  margin-top: -1.5rem;
+  text-align: center;
+}
