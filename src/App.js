@@ -37,7 +37,7 @@ class App extends Component {
           sentence={this.state.sentence}
           onIconClick={this.onSentenceIconClick.bind(this)}
         />
-        <div>{this.renderIcons()}</div>
+        <div className="App-body">{this.renderIcons()}</div>
       </div>
     );
   }
