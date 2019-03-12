@@ -4,6 +4,7 @@
 
 .App-body {
   display: flex;
+  overflow-x: hidden;
 }
 
 .App-header {

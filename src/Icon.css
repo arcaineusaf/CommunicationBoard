@@ -1,16 +1,16 @@
 .Icon-wrapper {
-  max-width: 100px;
-  padding: 1rem;
+  overflow: hidden;
+  width: 10%;
 }
 
 .Icon {
   border: 1px solid blue;
   display: inline-flex;
-  height: 100px;
-  width: 100px;
   justify-content: center; /* align horizontal */
   align-items: center;
   text-align: center;
+  max-height: 100px;
+  max-width: 100px;
 }
 
 .Icon-footer {
