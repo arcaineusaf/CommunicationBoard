@@ -1,6 +1,7 @@
 .Icon-wrapper {
-  overflow: hidden;
   width: 10%;
+  min-width: 100px;
+  min-height: 100px;
 }
 
 .Icon {
@@ -9,11 +10,17 @@
   justify-content: center; /* align horizontal */
   align-items: center;
   text-align: center;
-  max-height: 100px;
-  max-width: 100px;
+  min-height: 100px;
+  min-width: 100px;
+  margin: 1rem;
 }
 
+.Icon svg {
+  width: 100%;
+  padding-top: 100%;
+  height: 0px;
+}
 .Icon-footer {
-  margin-top: -1.5rem;
+  margin-top: -0.5rem;
   text-align: center;
 }
