@@ -18,3 +18,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.App-img-wrapper {
+  width: 10%;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.App-img {
+  display: inline-flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+  text-align: center;
+  min-height: 100px;
+  min-width: 100px;
+  margin: 1rem;
+}
+
+.App-img img {
+  width: 100%;
+}

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import icons from "./icons";
 import Sentence from "./Sentence";
 import Icon from "./Icon";
+import Upload from "./Upload";
 import "./App.css";
 
 class App extends Component {
@@ -24,10 +25,30 @@ class App extends Component {
     });
   }
 
-  renderIcons() {
-    return icons.map(icon => (
-      <Icon icon={icon} onIconClick={this.onIconClick.bind(this, icon)} />
+  getCustomIcons() {
+    const files = localStorage.getItem("aac.files");
+    if (!files) {
+      return null;
+    }
+
+    const filesArray = files.split(",");
+    return filesArray.map(file => (
+      <div className="App-img-wrapper">
+        <img
+          className="App-img"
+          src={localStorage.getItem(`aac.file.${file}`)}
+        />
+      </div>
     ));
+  }
+
+  renderIcons() {
+    return icons
+      .map(icon => (
+        <Icon icon={icon} onIconClick={this.onIconClick.bind(this, icon)} />
+      ))
+      .concat(this.getCustomIcons())
+      .concat([<Upload imageAdded={() => this.setState(this.state)} />]);
   }
 
   render() {
